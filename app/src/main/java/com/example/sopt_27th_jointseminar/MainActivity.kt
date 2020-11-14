@@ -3,6 +3,7 @@ package com.example.sopt_27th_jointseminar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
+import com.example.sopt_27th_jointseminar.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.properties.Delegates
 
