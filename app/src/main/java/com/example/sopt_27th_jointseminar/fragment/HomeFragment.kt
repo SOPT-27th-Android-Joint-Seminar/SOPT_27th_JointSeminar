@@ -22,6 +22,7 @@ class HomeFragment : Fragment() {
 
         imagebutton_close.setOnClickListener {
             constraint_close.visibility = View.GONE
+            view_close.visibility = View.GONE
         }
     }
 }
