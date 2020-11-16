@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="382dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_23" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rectangle_25" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="21dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+           android:layout_marginLeft="280dp"
+            android:src="@drawable/mdi_share" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="320dp"
+            android:src="@drawable/mdi_more_vert" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        android:src="@drawable/ellipse_2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="튼튼이맘"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notonanscjkkrbold"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="79dp"
+        android:layout_height="16dp"
+        android:text="동안구 관양2동"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="0sp"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        android:text="38.7℃ " />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        android:src="@drawable/ic_smile" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="53dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        android:src="@drawable/progressbar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textSize="11sp"
+        android:textColor="@color/gray"
+        android:text="매너온도"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosans"
+        android:textFontWeight="700"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:text="유아 장갑"
+        android:includeFontPadding="false"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:includeFontPadding="false"
+        android:textSize="12sp"
+        android:textColor="@color/dark_gray"
+        android:layout_marginTop="7dp"
+        android:text="유아동/유아도서 · 끌올 19초전"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/center_gray"
+        android:textSize="11sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:background="@drawable/category"
+        android:fontFamily="@font/notonanscjkkrbold"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:text="직거래" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notonanscjkkrbold"
+        android:includeFontPadding="false"
+        android:textSize="11sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        android:background="@drawable/category"
+        android:textColor="@color/center_gray"
+        android:text="유아용품"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:text="갭베이비 유아 장갑 신생아 잘맞을 사이즈예요. 새제품이고
+택도 붙어있는데 보관 중 약간 묻은게 있어서 저렴히
+내놓아요. 물론 빨래하면 없어질만한얼룩이예요~ " />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/dark_gray"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:includeFontPadding="false"
+        android:layout_marginTop="16dp"
+        android:text="채팅 0개"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:textSize="10sp"
+        android:textColor="@color/bottom_gray"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:includeFontPadding="false"
+        android:text="·"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="3dp"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:includeFontPadding="false"
+        android:textColor="@color/dark_gray"
+        android:text="관심 1"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_marginLeft="3dp"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:includeFontPadding="false"
+        android:textColor="@color/bottom_gray"
+        android:text="·"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="10sp"
+        android:layout_marginLeft="3dp"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:includeFontPadding="false"
+        android:textColor="@color/dark_gray"
+        android:text="조회 54"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        android:src="@drawable/mdi_favorite_border" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="14dp"
+        android:background="#efefef"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat"
+        android:fontFamily="@font/notosans"
+        android:includeFontPadding="false"
+        android:paddingVertical="4dp"
+        android:textFontWeight="700"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="채팅으로 거래하기"
+        android:layout_marginRight="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:fontFamily="@font/notonanscjkkrbold"
+        android:includeFontPadding="false"
+        android:text="5,000원"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
