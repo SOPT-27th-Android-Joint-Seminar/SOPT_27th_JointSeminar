@@ -134,7 +134,16 @@
         android:orientation="vertical">
 
         <!-- Todo: RecyclerView(우빈) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_rcv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_close" />
 
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.sopt_27th_jointseminar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.viewpager.widget.ViewPager
 import com.example.sopt_27th_jointseminar.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -59,6 +60,9 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+
+
+
 
     }
 }
