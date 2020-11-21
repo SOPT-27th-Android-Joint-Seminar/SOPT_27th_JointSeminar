@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/rectangle_12" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:text="유아장갑"
+        android:ems="8"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#333333"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="@+id/item_Image"
+        app:layout_constraintTop_toBottomOf="@+id/item_Image" />
+
+    <TextView
+        android:id="@+id/item_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신촌동 /"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textColor="#666666"
+        android:textSize="10sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/item_name"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="10 초전"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textColor="#666666"
+        android:textSize="10sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toEndOf="@+id/item_place"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10,000원"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textColor="#333333"
+        android:textSize="13sp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/item_place"
+        app:layout_constraintTop_toBottomOf="@+id/item_place" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/item_price"
+        app:layout_constraintTop_toBottomOf="@+id/item_price"
+        app:srcCompat="@drawable/mdi_favorite_border" />
+
+    <TextView
+        android:id="@+id/item_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textColor="#cccccc"
+        android:textSize="10sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23.3dp"
+
+        app:layout_constraintStart_toEndOf="@+id/item_heart"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:srcCompat="@drawable/mdi_question_selected" />
+
+    <TextView
+        android:id="@+id/item_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:fontFamily="@font/notonanscjkkrregular"
+        android:includeFontPadding="false"
+        android:textColor="#cccccc"
+        android:textSize="10sp"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/item_heart" />
+</androidx.constraintlayout.widget.ConstraintLayout>
