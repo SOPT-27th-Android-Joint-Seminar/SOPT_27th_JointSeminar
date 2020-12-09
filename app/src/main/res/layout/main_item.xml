@@ -8,11 +8,12 @@
 
     <ImageView
         android:id="@+id/item_Image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
         android:layout_marginLeft="16dp"
         app:srcCompat="@drawable/rectangle_12" />
 

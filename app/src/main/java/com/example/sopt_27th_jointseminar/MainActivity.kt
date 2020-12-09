@@ -2,10 +2,17 @@ package com.example.sopt_27th_jointseminar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.viewpager.widget.ViewPager
 import com.example.sopt_27th_jointseminar.fragment.*
+import com.example.sopt_27th_jointseminar.server.ProdResponseBody
+import com.example.sopt_27th_jointseminar.server.RetrofitGenerator
 import kotlinx.android.synthetic.main.activity_main.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import java.lang.Exception
 import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity() {
@@ -65,4 +72,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+
 }

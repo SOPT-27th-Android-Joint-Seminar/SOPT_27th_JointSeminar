@@ -54,7 +54,7 @@
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/user_img"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -64,7 +64,7 @@
         android:src="@drawable/ellipse_2" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/nickName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="튼튼이맘"
@@ -73,11 +73,11 @@
         android:fontFamily="@font/notonanscjkkrbold"
         android:includeFontPadding="false"
         android:layout_marginLeft="15dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+        app:layout_constraintStart_toEndOf="@+id/user_img"
+        app:layout_constraintTop_toTopOf="@+id/user_img" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/local"
         android:layout_width="79dp"
         android:layout_height="16dp"
         android:text="동안구 관양2동"
@@ -85,11 +85,11 @@
         android:includeFontPadding="false"
         android:textSize="12sp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/textView6" />
+        app:layout_constraintBottom_toBottomOf="@+id/user_img"
+        app:layout_constraintStart_toStartOf="@+id/nickName" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/manner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
@@ -118,8 +118,8 @@
         android:layout_width="53dp"
         android:layout_height="5dp"
         android:layout_marginTop="25dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/manner"
+        app:layout_constraintTop_toTopOf="@+id/manner"
         android:src="@drawable/progressbar" />
 
     <TextView
@@ -146,7 +146,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/productName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notosans"
@@ -156,11 +156,11 @@
         android:text="유아 장갑"
         android:includeFontPadding="false"
         android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/user_img"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/upAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notosanscjkkrmedium"
@@ -169,8 +169,8 @@
         android:textColor="@color/dark_gray"
         android:layout_marginTop="7dp"
         android:text="유아동/유아도서 · 끌올 19초전"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintStart_toStartOf="@+id/productName"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
 
     <TextView
         android:id="@+id/textView12"
@@ -184,12 +184,12 @@
         android:background="@drawable/category"
         android:fontFamily="@font/notonanscjkkrbold"
         android:includeFontPadding="false"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/upAgain"
+        app:layout_constraintTop_toBottomOf="@+id/upAgain"
         android:text="직거래" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notonanscjkkrbold"
@@ -205,7 +205,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/detail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -223,7 +223,7 @@
 내놓아요. 물론 빨래하면 없어질만한얼룩이예요~ " />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/commentNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10sp"
@@ -232,8 +232,8 @@
         android:includeFontPadding="false"
         android:layout_marginTop="16dp"
         android:text="채팅 0개"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintStart_toStartOf="@+id/detail"
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
 
     <TextView
         android:id="@+id/textView17"
@@ -245,11 +245,11 @@
         android:fontFamily="@font/notosanscjkkrmedium"
         android:includeFontPadding="false"
         android:text="·"
-        app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="@+id/textView16" />
+        app:layout_constraintStart_toEndOf="@+id/commentNum"
+        app:layout_constraintTop_toTopOf="@+id/commentNum" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/likeNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10sp"
@@ -271,11 +271,11 @@
         android:includeFontPadding="false"
         android:textColor="@color/bottom_gray"
         android:text="·"
-        app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toTopOf="@+id/textView18" />
+        app:layout_constraintStart_toEndOf="@+id/likeNum"
+        app:layout_constraintTop_toTopOf="@+id/likeNum" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/viewCnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
@@ -296,14 +296,14 @@
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="11dp"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/commentNum"
         app:layout_constraintTop_toBottomOf="@+id/view3"
         android:src="@drawable/mdi_favorite_border" />
 
@@ -337,7 +337,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="11dp"
